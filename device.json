@@ -1,0 +1,74 @@
+{
+    "name": "Renesas TB-S5D5",
+    "target": "renesas_tbs5d5",
+    "cc": "armgcc",
+    "classes": [
+        "renesas_tbs5d5.Renesas_TBS5D5",
+        "renesas_tbs5d5ser.Renesas_TBS5D5ser"
+    ],
+    "ram": 640,
+    "flash": 1024,
+    "family_type": "armcmx",
+    "family_name": "renesass5dx",
+    "chip_model": "S5D5",
+    "manual_reset": 1,
+    "preferred_baud": 115200,
+    "board_producer": "Renesas",
+    "chip_manifacturer": "Synergy",
+    "architecture": "cortex-m4",
+    "gccopts": {
+        "arch": [
+            "-mcpu=cortex-m4",
+            "-mthumb"
+        ],
+        "cflags": [
+            "-mthumb",
+            "-mcpu=cortex-m4",
+            "-O0",
+            "-ggdb",
+            "-fomit-frame-pointer",
+            "-falign-functions=16",
+            "-mno-unaligned-access",
+            "--specs=nano.specs",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-fno-common",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv4-sp-d16",
+            "-fsingle-precision-constant",
+            "-Wall",
+            "-Wextra",
+            "-Wstrict-prototypes",
+            "-std=gnu99"
+        ],
+        "defs": [
+            "VM_DEFAULT_THREAD_SIZE=1024"
+        ]
+    },
+    "relocator": "cortex-m",
+    "vm_chunk": 256,
+    "type": "board",
+    "virtualizable": "Renesas_TBS5D5",
+    "jtag_target": "renesass5dx.cfg",
+    "jtag_capable": 2,
+    "jtag_class": "Renesas_TBS5D5",
+    "jtag_chipid_command": "reset halt; mem 0x1007014, 0x10",
+    "jtag_chipid_len": 4,
+    "jtag_timeout": 180,
+    "jtag_chipid_prefix": "0x0100",
+    "bytecode_offset": "0x20400",
+    "vmstore_offset": "0x20000",
+    "has_alter_ego": false,
+    "uplink_reset": "reset",
+    "reset_time": 2000,
+    "rodata_in_ram": false,
+    "has_double_dev": true,
+    "connection": {
+        "baudrate": 115200,
+        "parity": "n",
+        "bytesize": 8,
+        "stopbits": 1,
+        "dsrdtr": false,
+        "rtscts": false
+    }
+}

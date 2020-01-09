@@ -1,0 +1,20 @@
+{
+    "description": "Add support for Synergy TB-S5D5 Board",
+    "fullname": "board.zerynth.renesas_tbs5d5",
+    "git_pointer": "zerynth://zerynth-boards/renesas_tbs5d5",
+    "info": {
+        "board": "Renesas TB-S5D5",
+        "chip_manufacturer": "Synergy",
+        "device": "TB-S5D5",
+        "family_type": "ARM Cortex M4"
+    },
+    "keywords": [
+        "synergy",
+        "renesas",
+        "board"
+    ],
+    "repo": "official",
+    "title": "Renesas TB-S5D5 Board Support Package",
+    "version": "r2.3.3",
+    "whatsnew": ""
+}

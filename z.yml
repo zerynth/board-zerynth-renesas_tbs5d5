@@ -1,0 +1,15 @@
+---
+description: Add support for Renesas TB-S5D5 board
+fullname: board.zerynth.renesas_tbs5d5
+info:
+    board: Renesas TB-S5D5
+    chip_manufacturer: Synergy
+    device: tbs5d5
+    family_type: ARM Cortex M4
+keywords:
+- board
+- synergy 
+- renesas
+- pks5d5
+title: Renesas TB-S5D5 Support Package
+...
